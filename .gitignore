@@ -1,0 +1,21 @@
+# PyCharm and VSCode
+.idea
+.VSCode
+
+# Venv
+.venv/
+
+# Cache
+__pycache__/
+
+# Private data
+.env.docker
+.env.local
+
+# Poetry
+poetry.lock
+
+# Tests
+.coverage
+htmlcov/
+.pytest_cache/
