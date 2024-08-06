@@ -36,11 +36,18 @@ factory-boy = "^3.3.0"
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "config.settings"
 python_files = ["tests/*/test_*.py"]
-addopts = "--nomigrations --cov=. --cov-report=term-missing --cov-config=pyproject.toml"
-
+addopts = "--cov=. --cov-report=term-missing --cov-config=pyproject.toml"
+filterwarnings = ["ignore::DeprecationWarning"]
 
 [tool.coverage.run]
-omit = ["tests/*", "*/tests/test_*.py", "manage.py", "/config", "*__init__.py"]
+omit = [
+    "tests/*",
+    "*/tests/test_*.py",
+    "manage.py",
+    "config/*",
+    "*__init__.py",
+    "migrations/*",
+]
 
 
 [build-system]
