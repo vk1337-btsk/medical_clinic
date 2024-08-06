@@ -1,0 +1,28 @@
+[
+{
+    "model": "clients.clients",
+    "pk": 1,
+    "fields": {
+        "user": 2,
+        "passport_id": 1,
+        "passport_date": "2024-08-02",
+        "country": "USA",
+        "city": "New-York",
+        "street": "Stree",
+        "blood_group": "A+"
+    }
+},
+{
+    "model": "clients.clients",
+    "pk": 2,
+    "fields": {
+        "user": 4,
+        "passport_id": 2,
+        "passport_date": "2024-08-02",
+        "country": "USA",
+        "city": "Киев",
+        "street": "Street",
+        "blood_group": "A+"
+    }
+}
+]
