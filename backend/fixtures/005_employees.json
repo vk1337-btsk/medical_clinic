@@ -1,0 +1,26 @@
+[
+{
+    "model": "employees.employees",
+    "pk": 1,
+    "fields": {
+        "user": 3,
+        "id_employee": 1,
+        "job_title": "Хирург",
+        "specializations": "Хирург",
+        "experience": "00:00:04",
+        "education": "Высшее"
+    }
+},
+{
+    "model": "employees.employees",
+    "pk": 2,
+    "fields": {
+        "user": 4,
+        "id_employee": 2,
+        "job_title": "Хирург",
+        "specializations": "Хирург",
+        "experience": "00:00:04",
+        "education": "Высшее"
+    }
+}
+]

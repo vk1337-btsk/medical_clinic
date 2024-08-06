@@ -1,0 +1,26 @@
+[
+{
+    "model": "catalog.serviceсategories",
+    "pk": 1,
+    "fields": {
+        "title": "Analys blooаd",
+        "description": "Описание Анализ крови"
+    }
+},
+{
+    "model": "catalog.serviceсategories",
+    "pk": 2,
+    "fields": {
+        "title": "МРТ",
+        "description": "Описание МРТ"
+    }
+},
+{
+    "model": "catalog.serviceсategories",
+    "pk": 3,
+    "fields": {
+        "title": "УЗИ",
+        "description": "Описание УЗИ"
+    }
+}
+]

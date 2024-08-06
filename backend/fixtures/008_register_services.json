@@ -1,0 +1,58 @@
+[
+{
+    "model": "clients.registredservices",
+    "pk": 2,
+    "fields": {
+        "client": 2,
+        "service": 1,
+        "date_services": "2023-01-01T00:00:00Z",
+        "doctor": 1,
+        "status_service": "CR",
+        "status_paid": true,
+        "is_analyz": true,
+        "is_vizit": true
+    }
+},
+{
+    "model": "clients.registredservices",
+    "pk": 4,
+    "fields": {
+        "client": 1,
+        "service": 1,
+        "date_services": "2024-01-01T00:00:00Z",
+        "doctor": 1,
+        "status_service": "CR",
+        "status_paid": true,
+        "is_analyz": true,
+        "is_vizit": true
+    }
+},
+{
+    "model": "clients.registredservices",
+    "pk": 3,
+    "fields": {
+        "client": 1,
+        "service": 1,
+        "date_services": "2022-01-01T00:00:00Z",
+        "doctor": 1,
+        "status_service": "CR",
+        "status_paid": true,
+        "is_analyz": true,
+        "is_vizit": true
+    }
+},
+{
+    "model": "clients.registredservices",
+    "pk": 1,
+    "fields": {
+        "client": 1,
+        "service": 1,
+        "date_services": "2025-01-01T00:00:00Z",
+        "doctor": 2,
+        "status_service": "CR",
+        "status_paid": true,
+        "is_analyz": true,
+        "is_vizit": true
+    }
+}
+]

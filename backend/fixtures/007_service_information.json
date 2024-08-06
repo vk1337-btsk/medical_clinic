@@ -1,0 +1,146 @@
+[
+{
+    "model": "catalog.serviceinformation",
+    "pk": 1,
+    "fields": {
+        "title": "Анализ крови на группу крови",
+        "general_info": "Общая информация Анализ крови на группу крови",
+        "additional_info": "Дополнительная информация Анализ крови на группу крови",
+        "duration": "1 00:00:00",
+        "preparation": "Требованияй к подготоке услуги Анализ крови на группу крови",
+        "price": 1100,
+        "discount": 1,
+        "categories": [
+            1
+        ]
+    }
+},
+{
+    "model": "catalog.serviceinformation",
+    "pk": 2,
+    "fields": {
+        "title": "Анализ крови на серотоник",
+        "general_info": "Общая информация Анализ крови на серотоник",
+        "additional_info": "Дополнительная информация Анализ крови на серотоник",
+        "duration": "1 00:00:00",
+        "preparation": "Требованияй к подготоке услуги Анализ крови на серотоник",
+        "price": 1100,
+        "discount": 1,
+        "categories": [
+            1
+        ]
+    }
+},
+{
+    "model": "catalog.serviceinformation",
+    "pk": 3,
+    "fields": {
+        "title": "Анализ крови на тестостерон",
+        "general_info": "Общая информация Анализ крови на тестостерон",
+        "additional_info": "Дополнительная информация Анализ крови на тестостерон",
+        "duration": "1 00:00:00",
+        "preparation": "Требованияй к подготоке услуги Анализ крови на тестостерон",
+        "price": 1100,
+        "discount": 1,
+        "categories": [
+            1
+        ]
+    }
+},
+{
+    "model": "catalog.serviceinformation",
+    "pk": 4,
+    "fields": {
+        "title": "Анализ МРТ мозга",
+        "general_info": "Общая информация Анализ МРТ мозга",
+        "additional_info": "Дополнительная информация Анализ МРТ мозга",
+        "duration": "1 00:00:00",
+        "preparation": "Требованияй к подготоке услуги Анализ МРТ мозга",
+        "price": 1100,
+        "discount": 1,
+        "categories": [
+            2
+        ]
+    }
+},
+{
+    "model": "catalog.serviceinformation",
+    "pk": 5,
+    "fields": {
+        "title": "Анализ МРТ почек",
+        "general_info": "Общая информация Анализ МРТ почек",
+        "additional_info": "Дополнительная информация Анализ МРТ почек",
+        "duration": "1 00:00:00",
+        "preparation": "Требованияй к подготоке услуги Анализ МРТ почек",
+        "price": 1100,
+        "discount": 1,
+        "categories": [
+            2
+        ]
+    }
+},
+{
+    "model": "catalog.serviceinformation",
+    "pk": 6,
+    "fields": {
+        "title": "Анализ МРТ сердца",
+        "general_info": "Общая информация Анализ МРТ сердца",
+        "additional_info": "Дополнительная информация Анализ МРТ сердца",
+        "duration": "1 00:00:00",
+        "preparation": "Требованияй к подготоке услуги Анализ МРТ сердца",
+        "price": 1100,
+        "discount": 1,
+        "categories": [
+            2
+        ]
+    }
+},
+{
+    "model": "catalog.serviceinformation",
+    "pk": 7,
+    "fields": {
+        "title": "Анализ УЗИ печени",
+        "general_info": "Общая информация Анализ МРТ печени",
+        "additional_info": "Дополнительная информация Анализ МРТ печени",
+        "duration": "1 00:00:00",
+        "preparation": "Требованияй к подготоке услуги Анализ МРТ печени",
+        "price": 1100,
+        "discount": 1,
+        "categories": [
+            3
+        ]
+    }
+},
+{
+    "model": "catalog.serviceinformation",
+    "pk": 8,
+    "fields": {
+        "title": "Анализ УЗИ селезёнки",
+        "general_info": "Общая информация Анализ МРТ селезёнки",
+        "additional_info": "Дополнительная информация Анализ МРТ селезёнки",
+        "duration": "1 00:00:00",
+        "preparation": "Требованияй к подготоке услуги Анализ МРТ селезёнки",
+        "price": 1100,
+        "discount": 1,
+        "categories": [
+            3
+        ]
+    }
+},
+{
+    "model": "catalog.serviceinformation",
+    "pk": 9,
+    "fields": {
+        "title": "Анализ УЗИ щитовидки",
+        "general_info": "Общая информация Анализ МРТ щитовидки",
+        "additional_info": "Дополнительная информация Анализ МРТ щитовидки",
+        "duration": "1 00:00:00",
+        "preparation": "Требованияй к подготоке услуги Анализ МРТ щитовидки",
+        "price": 1100,
+        "discount": 1,
+        "categories": [
+            3
+        ]
+    }
+}
+]

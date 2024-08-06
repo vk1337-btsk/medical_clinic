@@ -1,0 +1,122 @@
+[
+{
+    "model": "users.users",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$jreCHhZdE5J85ojkP8Jn6a$tVjs70sZWoct0PH5BXPWe6l1VBk1Tdi11xiIJ96sAdw=",
+        "last_login": "2024-08-03T02:13:25.913Z",
+        "date_joined": "2024-07-20T19:17:24.442Z",
+        "email": "root@test.com",
+        "first_name": "Admin",
+        "last_name": "Adminov",
+        "middle_name": "Adminovich",
+        "date_birthday": "2000-01-01",
+        "phone": "88005553535",
+        "avatar": "media/users/avatar/avatar_default.png",
+        "is_client": false,
+        "is_employee": false,
+        "is_banned": false,
+        "is_active": true,
+        "is_staff": true,
+        "is_superuser": true,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.users",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$jreCHhZdE5J85ojkP8Jn6a$tVjs70sZWoct0PH5BXPWe6l1VBk1Tdi11xiIJ96sAdw=",
+        "last_login": null,
+        "date_joined": "2024-08-02T11:44:32Z",
+        "email": "client@test.com",
+        "first_name": "Иван",
+        "last_name": "Иванов",
+        "middle_name": "Иванович",
+        "date_birthday": "1996-04-20",
+        "phone": "88005553535",
+        "avatar": "media/users/avatar/avatar_default.png",
+        "is_client": true,
+        "is_employee": false,
+        "is_banned": false,
+        "is_active": true,
+        "is_staff": false,
+        "is_superuser": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.users",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$jreCHhZdE5J85ojkP8Jn6a$tVjs70sZWoct0PH5BXPWe6l1VBk1Tdi11xiIJ96sAdw=",
+        "last_login": null,
+        "date_joined": "2024-08-02T11:44:32Z",
+        "email": "employee@test.com",
+        "first_name": "Василий",
+        "last_name": "Васильев",
+        "middle_name": "Васильевич",
+        "date_birthday": "1996-04-20",
+        "phone": "88005553535",
+        "avatar": "media/users/avatar/avatar_default.png",
+        "is_client": false,
+        "is_employee": true,
+        "is_banned": false,
+        "is_active": true,
+        "is_staff": false,
+        "is_superuser": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.users",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$jreCHhZdE5J85ojkP8Jn6a$tVjs70sZWoct0PH5BXPWe6l1VBk1Tdi11xiIJ96sAdw=",
+        "last_login": null,
+        "date_joined": "2024-08-02T11:44:32Z",
+        "email": "client_employee@test.com",
+        "first_name": "Никита",
+        "last_name": "Никитов",
+        "middle_name": "Никитович",
+        "date_birthday": "1996-04-20",
+        "phone": "88005553535",
+        "avatar": "media/users/avatar/avatar_default.png",
+        "is_client": true,
+        "is_employee": true,
+        "is_banned": false,
+        "is_active": true,
+        "is_staff": false,
+        "is_superuser": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.users",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$jreCHhZdE5J85ojkP8Jn6a$tVjs70sZWoct0PH5BXPWe6l1VBk1Tdi11xiIJ96sAdw=",
+        "last_login": null,
+        "date_joined": "2024-08-02T20:25:40Z",
+        "email": "manager@test.com",
+        "first_name": "Максим",
+        "last_name": "Максимов",
+        "middle_name": "Максимыч",
+        "date_birthday": "2024-08-02",
+        "phone": "+995591076210",
+        "avatar": "media/users/avatar/avatar_default.png",
+        "is_client": false,
+        "is_employee": true,
+        "is_banned": false,
+        "is_active": true,
+        "is_staff": true,
+        "is_superuser": false,
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]
