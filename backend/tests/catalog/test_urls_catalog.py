@@ -229,7 +229,7 @@ def test_url_category_destroy(api_client, request, category_service_info, user, 
     )
 
     if status_code == 204:
-        assert response.data == None
+        assert response.data is None
     elif status_code == 401:
         assert response.data["detail"] == IsAuthenticated.message
     else:
@@ -444,7 +444,7 @@ def test_url_service_information_destroy(api_client, request, category_service_i
     )
 
     if status_code == 204:
-        assert response.data == None
+        assert response.data is None
     elif status_code == 401:
         assert response.data["detail"] == IsAuthenticated.message
     else:
