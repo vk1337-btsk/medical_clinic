@@ -34,7 +34,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     # System apps
-    "django_celery_beat",  # Celery 
+    "django_celery_beat",  # Celery
     "rest_framework",  # Django Rest Framework
     "rest_framework_simplejwt",  # Django Rest Framework JWT для авторизации
     "corsheaders",  # Corsheaders
@@ -163,33 +163,33 @@ DJOSER = {
     "TOKEN_MODEL": "rest_framework.authtoken.models.Token",  # Указывает модель токена, используемого djoser
     "HIDE_USERS": True,  # В случае запроса обычным пользователем списка пользователей, вернётся только пользователь
     # Регистрация и активация пользователя
-    "USER_CREATE_PASSWORD_RETYPE": True,  # Отправлять ли поле 're_password" (подтверждение пароля) при регистрации
+    "USER_CREATE_PASSWORD_RETYPE": True,  # Отправка 're_password" при регистрации
     "SEND_ACTIVATION_EMAIL": True,  # Отправлять ли ссылку подтверждения при создании аккаунта и изменении почты
     "SEND_CONFIRMATION_EMAIL": True,  # Отправлять ли пользователю письмо с подтверждением регистрации
     "ACTIVATION_URL": "#/activate/{uid}/{token}",  # Эндпоинт для активации аккаунта пользователя
     # Сброс пароля
     "PASSWORD_CHANGED_EMAIL_CONFIRMATION": True,  # Отправлять ли ссылку с подтверждением для смены пароля
-    "SET_PASSWORD_RETYPE": True,  # Отправлять ли поле 're_new_password " (повтор password) при смене пароля
-    "PASSWORD_RESET_CONFIRM_RETYPE": True,  # Отправлять ли поле 're_new_password " (повтор password) при подтверждении смены пароля
+    "SET_PASSWORD_RETYPE": True,  # Отправлять 're_new_password " при смене пароля
+    "PASSWORD_RESET_CONFIRM_RETYPE": True,  # Отправлять 're_new_password " при подтверждении смены пароля
     "PASSWORD_RESET_CONFIRM_URL": "#/password-reset/{uid}/{token}",  # Эндпоинт для сброса пароля
-    "PASSWORD_RESET_SHOW_EMAIL_NOT_FOUND": False,  # При сбросе пароля, если введён несуществующий в базе пароль будет сообщение: Пользователь с указанным адресом электронной почты не существует
+    "PASSWORD_RESET_SHOW_EMAIL_NOT_FOUND": False,  # При смене пароля если введён несуществующий email будет сообщение
     "LOGOUT_ON_PASSWORD_CHANGE": True,  # При смене пароля происходит выход из аккаунта
     # Смена email
     "USERNAME_CHANGED_EMAIL_CONFIRMATION": False,  # Отправлять ли ссылку с подтверждением для смены имени
-    "SET_USERNAME_RETYPE": True,  # Отправлять ли поле 're_new_email" (повтор email) при смене username
-    "USERNAME_RESET_CONFIRM_RETYPE": True,  # Отправлять ли поле 're_new_email" (повтор email) при подтверждении смены email
+    "SET_USERNAME_RETYPE": True,  # Отправлять 're_new_email" при смене email
+    "USERNAME_RESET_CONFIRM_RETYPE": True,  # Отправлять 're_new_email" при подтверждении смены email
     "USERNAME_RESET_CONFIRM_URL": "#/username-reset/{uid}/{token}",  # Эндпоинт для сброса email
-    "USERNAME_RESET_SHOW_EMAIL_NOT_FOUND": False,  # При смене email, если введён несуществующий email будет сообщение: Пользователь с указанным адресом электронной почты не существует
+    "USERNAME_RESET_SHOW_EMAIL_NOT_FOUND": False,  # При смене email если введён несуществующий email будет сообщение
     # Настройки сериализаторов классов
     "SERIALIZERS": {
         # "user_create_password_retype": "djoser.serializers.UserCreatePasswordRetypeSerializer",
-        "user_create_password_retype": "apps.users.serializers.users.UserRegistrationSerializer",  # Сериализатор для регистрации
+        "user_create_password_retype": "apps.users.serializers.users.UserRegistrationSerializer",  # Регистрация
         # "user_create": "apps.users.serializers.users.UserRegistrationSerializer",
-        "user_create": "apps.users.serializers.users.UserRegistrationSerializer",  # Сериализатор для регистрации
+        "user_create": "apps.users.serializers.users.UserRegistrationSerializer",  # Регистрации
         # "user": "djoser.serializers.UserSerializer",
-        "user": "apps.users.serializers.users.UserDetailSerializer",  # Сериализатор для просмотра пользователя
+        "user": "apps.users.serializers.users.UserDetailSerializer",  # Просмотра пользователя
         # "current_user": "djoser.serializers.UserSerializer",
-        "current_user": "apps.users.serializers.users.CurrentUserDetailSerializer",  # Сериализатор для действий текущего пользователя
+        "current_user": "apps.users.serializers.users.CurrentUserDetailSerializer",  # Действия текущего пользователя
         "activation": "djoser.serializers.ActivationSerializer",
         "password_reset": "djoser.serializers.SendEmailResetSerializer",
         "password_reset_confirm": "djoser.serializers.PasswordResetConfirmSerializer",
@@ -244,7 +244,7 @@ SIMPLE_JWT = {
     "REFRESH_TOKEN_LIFETIME": timedelta(days=30),  # Срок жизни refresh-токена (был 1 день)
     "ROTATE_REFRESH_TOKENS": False,  # При запросе нового acess-токен также будет возвращаться новый refresh-токен
     "BLACKLIST_AFTER_ROTATION": False,  # Черный список для refresh-токенов
-    "UPDATE_LAST_LOGIN": False,  # Нужно ли обновлять поле last_login в при входе в систему (есть вопросы к безопасности)
+    "UPDATE_LAST_LOGIN": True,  # Нужно ли обновлять поле last_login в при входе в систему
     "ALGORITHM": "HS256",  # Алгоритм шифрования
     "SIGNING_KEY": SECRET_KEY,  # Ключ для подписи содержимого токенов (SECRET_KEY использовать не рекомендуется)
     "VERIFYING_KEY": "",

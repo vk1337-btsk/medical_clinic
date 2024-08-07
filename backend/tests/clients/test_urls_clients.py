@@ -161,7 +161,7 @@ def test_url_history_service_detail(api_client, request, user, status_code_ok, s
 
             if status_code_not_ok == 200:
                 if user.is_client or user.is_employee:
-                    assert response.data != None
+                    assert response.data is not None
             else:
                 assert response.data["detail"] == IsOwnerOrAdmin.message
 
@@ -270,7 +270,7 @@ def test_url_history_service_destroy(api_client, request, user, status_code, reg
     assert response.status_code == status_code
 
     if status_code == 204:
-        assert response.data == None
+        assert response.data is None
     elif status_code == 401:
         assert response.data["detail"] == IsAuthenticated.message
     elif status_code == 403:

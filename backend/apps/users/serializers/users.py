@@ -39,7 +39,7 @@ class UserRegistrationSerializer(djoser_serializers.UserCreateSerializer):
         if data.get("password") != password2:
             raise drf_serializers.ValidationError(Messages.MESSAGES_PASSWORD["not_match"])
 
-        if data.get("is_client") != True and data.get("is_employee") != True:
+        if data.get("is_client") is False and data.get("is_employee") is False:
             raise drf_serializers.ValidationError(Messages.MESSAGES_REGISTRATION["not_roles"])
 
         return data

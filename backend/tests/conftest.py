@@ -1,10 +1,8 @@
-import datetime
 import random
 
 import factory
 import pytest
 import pytz
-from requests import session
 from apps.catalog.models import ServiceInformation, ServiceСategories
 from apps.clients.models import Clients, RegistredServices
 from apps.employees.models import Employees
